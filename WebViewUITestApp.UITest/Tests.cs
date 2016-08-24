@@ -25,7 +25,7 @@ namespace WebViewUITestApp.UITest
 		[Test]
 		public void ReplTest()
 		{
-			//Query the Css attrivutes using the Repl to explore the app
+			//Query the Css attributes using the Repl to explore the webview in the app
 			//For example, app.Query(x => x.Css("*"))
 			app.Repl();
 		}
