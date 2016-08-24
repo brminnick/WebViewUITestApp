@@ -21,6 +21,7 @@ namespace WebViewUITestApp.UITest
             app = AppInitializer.StartApp(platform);
         }
 
+		[Ignore]
 		[Test]
 		public void ReplTest()
 		{
@@ -31,11 +32,11 @@ namespace WebViewUITestApp.UITest
         public void ViewXamarinWebsite()
         {
 			app.Tap(x => x.Css("SPAN.menu"));
-			app.Screenshot("Tapped on view with class: Xamarin_Forms_Platform_iOS_WebViewRenderer");
+			app.Screenshot("Menu Tapped");
 			app.Tap(x => x.Css("A").Index(2));
-			app.Screenshot("Tapped on view with class: Xamarin_Forms_Platform_iOS_WebViewRenderer");
+			app.Screenshot("Products Tapped");
 			app.Tap(x => x.Css("A.action-button.blue.solid"));
-			app.Screenshot("Tapped on view with class: Xamarin_Forms_Platform_iOS_WebViewRenderer");
+			app.Screenshot("Learn More About Xamarin Tapped");
 		}
 	}
 }
