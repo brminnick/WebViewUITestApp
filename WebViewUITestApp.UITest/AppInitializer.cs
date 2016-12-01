@@ -6,16 +6,6 @@ namespace WebViewUITestApp.UITest
 	{
 		public static IApp StartApp(Platform platform)
 		{
-			const string apkFile = @"../../../WebViewUITestApp/WebViewUITestApp.Droid/bin/Release/WebViewUITestApp.Droid-Signed.apk";
-
-			if (platform == Platform.Android)
-			{
-				return ConfigureApp
-					.Android
-					//.ApkFile(apkFile)
-					.StartApp();
-			}
-
 			return ConfigureApp
 				.iOS
 				.PreferIdeSettings()

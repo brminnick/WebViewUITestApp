@@ -3,7 +3,6 @@ using Xamarin.UITest;
 
 namespace WebViewUITestApp.UITest
 {
-	[TestFixture(Platform.Android)]
 	[TestFixture(Platform.iOS)]
 	public class Tests
 	{
