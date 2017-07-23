@@ -48,13 +48,11 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WebViewUITestApp\WebViewUITestApp.iOS\WebViewUITestApp.iOS.csproj">
-      <Project>{d193e90b-08a1-4de8-89c1-2d921a854636}</Project>
+    <ProjectReference Include="..\WebViewUITestApp.iOS\WebViewUITestApp.iOS.csproj">
+      <Project>{D193E90B-08A1-4DE8-89C1-2D921A854636}</Project>
       <Name>WebViewUITestApp.iOS</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WebViewUITestApp\WebViewUITestApp\WebViewUITestApp.csproj">
-      <Project>{47054890-d480-4cde-aa36-a2de8bbe4eb0}</Project>
-      <Name>WebViewUITestApp</Name>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
